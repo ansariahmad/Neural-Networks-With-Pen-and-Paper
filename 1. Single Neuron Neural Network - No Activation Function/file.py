@@ -1,7 +1,7 @@
-import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
+import streamlit as st
+import matplotlib.pyplot as plt
 
 np.random.seed(42)
 # Define the SimpleNeuralNetwork class
@@ -99,4 +99,4 @@ else:
             if (loss == float("inf")) or (loss == np.nan):
                 st.warning("Gradients have exploded. Try a different learning rate.")
             else:
-                st.write(f"Final Loss: {loss}, {type(loss)}")
+                st.write(f"Final Loss: {loss}")
